@@ -11,6 +11,12 @@ The SQL queries? Look into [here](/project_sql/).
 5. What are the most optimal skills to learn? 
 
 # Tools I Used
+The main tools that helped me make the analysis are:
+
+- SQL: The backbone of the analysis, that made possible writing the queries and getting critical insight from the data.
+- PostgreSQL: The Database System used to manage the job related data in realiable and robust fashion.
+- Visual Studio Code: The go-to IDE for the database managing and quering the data.
+- Git & GitHub: Used for version control and sharing the SQL scripts and analysis 
 
 # The analysis 
 
