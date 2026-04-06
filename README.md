@@ -45,9 +45,9 @@ ORDER BY
 LIMIT 10
 ```
 
-The analysis of the top 10 most paying remote ML position is given below:
+The analysis of the top 10 most paying remote ML positions is given below:
 
-![Top 10 Most Paid Remote Machine Learning Jobs](img\1_top_paying_remote_ml_roles.png)
+![Top 10 Most Paid Remote Machine Learning Jobs](img/1_top_paying_remote_ml_roles.png)
 
 
 By commenting the `job_location = 'Anywhere' AND` in the `WHERE` statement, one could see the top average salaries for all locations. Here is the plot:
