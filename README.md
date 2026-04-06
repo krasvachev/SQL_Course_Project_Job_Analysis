@@ -52,7 +52,7 @@ The analysis of the top 10 most paying remote ML positions is given below:
 
 By commenting the `job_location = 'Anywhere' AND` in the `WHERE` statement, one could see the top average salaries for all locations. Here is the plot:
 
-![Top 10 Most Paid Machine Learning Jobs ](img\1_top_paying_ml_roles.png)
+![Top 10 Most Paid Machine Learning Jobs ](img/1_top_paying_ml_roles.png)
 *The same analysis could be done for other data positions like Data Scientist, Data Engineer, etc.*
 
 The three most important implications of the analysis are:
@@ -68,10 +68,10 @@ In the end, it should be mentioned that many companies do not give information a
 ### 2. Top Paying Machine Learning Skills
 There are skills that are mandatory for an ML role. There are other skills which could increase the salary of an ML Engineer. The next two graphs show this relation:
 
-![Average Salary by Skills](img\2_avg_salary_per_skill.png)     
+![Average Salary by Skills](img/2_avg_salary_per_skill.png)     
 *The skills are grouped by specific category*
 
-![Top 15 Skills Required For High Salary](img\2_avg_salary_per_skill.png)     
+![Top 15 Skills Required For High Salary](img/2_avg_salary_per_skill.png)     
 
 Three key insights from the figures are:
 
@@ -115,7 +115,7 @@ ORDER BY
 
 The most demanded skills in 2023 are given in the figure below. The top language for an ML position is Python. The ML Engineer should also be good in specific libraries (PyTorch and TensorFlow), in at least one cloud technology (AWS/Azure) and have SQL skills. 
 
-![Most Demanding Skills for ML Engineer](img\3_top_demanded_skills.png)     
+![Most Demanding Skills for ML Engineer](img/3_top_demanded_skills.png)     
 
 A few key findings are:
 
@@ -144,13 +144,14 @@ LIMIT 10
 ```
 
 ### 4. Top Paying Niche Skills
-Companies are paying dozens of bills for niche skills. The 2023 research shows that skills like haskel, chef, kotlin are the top candidates for high salary. However, for an ML Engineer it is better to focus on the basics in the beginning of the career, rather than in such niche technologies. First, learn the fundamentals, then tackle more "exquisite" tools.
+Companies are paying dozens of bills for niche skills. The 2023 research shows that skills like haskel, chef, kotlin are the top candidates for high salary. However, for an ML Engineer, it is better to focus on the basics in the beginning of the career, rather than in such niche technologies. First, learn the fundamentals, then tackle more "exquisite" tools.
 
-One last note ... For the last year **[footnote](footnote)**, such niche high-paid skills are Hugging Face, LangChain and the LLM top models APIs (OpenAI, Claude, Gemini, etc).
+One last note ... For the last year([^1]), such niche high-paid skills are Hugging Face, LangChain and the LLM top models APIs (OpenAI, Claude, Gemini, etc).
 
+([^1]) April 2026.
 ### 5. Optimal Skills - Demand vs Salary
 
-![Optimal Skills for ML Engineer - Demand vs Salary](img\5_optimal_skills.png)     
+![Optimal Skills for ML Engineer - Demand vs Salary](img/5_optimal_skills.png)     
 
 The last task is to compare the skills based ot demand versus salary. The figure once again shows Python as an optimal skill to learn. It is the highest-demand tool in the profession. Scala, on the other hand, is the highest paid and also very niche. There are also hidden gems - Spark, Airflow, Hadoop and Kubernetes. It is worth mentioning the R programming language - less paid and not highly demanded.
 
