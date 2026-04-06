@@ -1,7 +1,7 @@
 # Introduction
 📊 The data job market... The project focuses on the data job market, particularly the 📈 Machine Learning Roles. 💰 Top-paying jobs and 🔥 in-demand skills are explored. The Repo also answers ❓ the question: "What are the optimal skills for my role that I need to learn?".
 
-🔎 The SQL queries? Look into [here](/project_sql/).
+🔎 The SQL queries? Look into [here](/sql_project/).
 
 # The Main Questions I Want To Answer
 1. What are the top-paying Machine Learning roles?
@@ -161,7 +161,7 @@ The last task is to compare the skills based ot demand versus salary. The figure
 
 - **Insights of the Machine Learning Job Market** - Find the top demand and high-paying skills, as well as optimal pathways to accelerate a career as a Machine Learning Engineer.
 
-### Insights
+# Insights
 
 
 
