@@ -165,13 +165,13 @@ The last task is to compare the skills based ot demand versus salary. The figure
 # Insights
 As a Conclusion, the most intriguing findings are overviewed:
 
-* Python is the top language for ML positions. There is no way around. This should be the foundation of every ML Engineer. On the bases Python the other ML skills and technologies should be built. This is also try for April 2026, where "everyone is vibe coding". Building the basics could lead to great achievements in the long run.
+* 🐍 Python is the top language for ML positions. There is no other way around. Python should be the foundation of every ML Engineer. On the basis of Python, the other ML libraries and technologies should be built. This is also true for April 2026, where "everyone is vibe coding". Building the basics could lead to great achievements in the long run.
 
-* The high-paid ML Engineer has the foundations in checked and it is well rounded on other technologies. PyTorch and TensorFlow are the most common libraries to built a ML models. SQL is becoming a desired skill for each ML developer. Cloud technologies should also become a part of the technical stack of a ML Engineer. AWS, Azure are the optimal and high-paid skill. GCP could be also added to them[^2].
+* 💰 The high-paid ML Engineer has the foundations in place and is multi-skilled in other technologies. PyTorch and TensorFlow are the most common libraries to build ML models. SQL is becoming a desired skill for each ML developer. Cloud technologies should also become a part of the technical stack of an ML Engineer. AWS and Azure are the optimal and highly paid skills. GCP could also be added to that list[^2].
 
-* In the beginning of the career, it is better to learn fundamentials and the optimal skills. More skills and bigger experience leads to higher salary. There are also niche skills, which could increase the salary extremely. However, it is wiser to learn them after the mastering basics.
+* 💪🏽 In the beginning of the career, it is better to learn the fundamentals and the optimal skills. More skills and more experience lead to a higher salary. There are also niche skills, which could extremely increase the salary. However, it is wiser to learn them after mastering the basics.
 
-[^2]: For April 2026, AWS, Azure and GCP are high-demanded and optimal cloud technologies, that could boost the salary for most of the ML positions.
+[^2]: For April 2026, AWS, Azure and GCP are still highly demanded and optimal cloud technologies, which could boost the salary for most of the ML positions.
 
 
 
