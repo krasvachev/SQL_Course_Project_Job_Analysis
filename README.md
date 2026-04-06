@@ -153,18 +153,18 @@ One last note... For the last year, such niche high payed skills are Hugging Fac
 ![Optimal Skills for ML Engineer - Demand vs Salary](img\5_optimal_skills.png)     
 *comment about the graph*
 
-slkalkjdjsadjsl
+The last task is to comparare the skills based ot demand versus salary. The figure once again shows Python as an optimal skill to learn. It is the highest demand tool in the profession. Scala, on the other hand, is the highest paid, also very niche. There are also a hidden gems - Spark, Airflow, Hadoop and Kubernetes. It worths mentioning the R programing language - less paid and not highly demand.
 
 # What I Learned 
-- **Advanced SQL Query Crafting** - 
+- **Advanced SQL Query Crafting** - Writing a queries that combine `JOINS`, `CASE` expressions, `UNION` operators, Date function manipulation and more...
 
-- **Sub-Queries and CTE**
+- **Sub-Queries and CTE** - Query the Database via `Sub-Queries` and `CTE` to combine the data end get ultra-important insights.
 
-- **Insights of the Machine Learning Job Market** - 
+- **Insights of the Machine Learning Job Market** - Find the top demand and high paying skills, also optimal pathways to accelarate a career as a Machine Learning Engineer.
 
 ### Insights
 
-### 
+
 
 
 
