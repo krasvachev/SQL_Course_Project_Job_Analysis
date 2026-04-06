@@ -146,7 +146,7 @@ LIMIT 10
 ### 4. Top Paying Niche Skills
 Companies are paying dozens of bills for niche skills. The 2023 research shows that skills like haskel, chef, kotlin are the top candidates for high salary. However, for an ML Engineer, it is better to focus on the basics in the beginning of the career, rather than in such niche technologies. First, learn the fundamentals, then tackle more "exquisite" tools.
 
-One last note ... For the last year ^1, such niche high-paid skills are Hugging Face, LangChain and the LLM top models APIs (OpenAI, Claude, Gemini, etc).
+One last note ... For the last year [^1], such niche high-paid skills are Hugging Face, LangChain and the LLM top models APIs (OpenAI, Claude, Gemini, etc).
 
 [^1]: April 2026.
 ### 5. Optimal Skills - Demand vs Salary
