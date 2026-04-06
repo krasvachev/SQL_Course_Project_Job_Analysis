@@ -19,10 +19,10 @@ The main tools that helped me make the analysis are:
 - **Git & GitHub**: Used for version control and sharing the SQL scripts and analysis 
 
 # The analysis 
-Each query was designed to answer a specific [question](Question Aswerd) about Machine Learning job market. Below, a few examples are given on the approach:
+Each query was designed to answer a specific [question](Question Aswerd) about Machine Learning (ML) job market. Below, a few examples are given on the approach:
 
 ### 1. Top Paying Machine Learning Jobs
-The top Machine Learning positions were ranked based on the average yearly salary and the location. The emphasis was put on the remote jobs. The query shows a way to answer the question:
+The top ML positions were ranked based on the average yearly salary and the location. The emphasis was put on the remote jobs. The query shows a way to answer the question:
 
 ```sql 
 SELECT 
@@ -45,11 +45,115 @@ ORDER BY
 LIMIT 10
 ```
 
-Here is the analysis of the market:
-![Caption](url_to_image)
+The analysis of the top 10 most paying remote ML position is given below:
+
+![Top 10 Most Payed Remote Machine Learning Jobs ](img\1_top_paying_remote_ml_roles.png)
 *comment about the graph*
 
-**Do it for the other 4 questions**
+By commenting the `job_location = 'Anywhere' AND` in the `WHERE` statement one could see top average salaries for all locations. Here is the plot:
+
+![Top 10 Most Payed Machine Learning Jobs ](img\1_top_paying_ml_roles.png)
+*comment about the graph*
+
+The three most important implications of the analysis are:
+
+1. The salaries for Machine Learning Engineers are exceptionally high — $325K. The two leading ML roles Harnham (Senior ML Engineer) and Storm5 (Principal ML Engineer) achieve the top of the market. Should be mentioned that many companies do not give information about the salary in the job postings.
+
+2. The first two highest payed positions are remote. 5 of the top 10 roles are fully remote. The on-site/hybrid roles are also top payed. It is facinating that the well-known companies in the ranking prioritise the on-site roles.
+
+3. It is obvious from the figures that the top payed positions are for Senior developers. It could be аssumed with high certanty that more experienced and skillful developers, receive higher salaries 
+
+### 2. Top Paying Machine Learning Skills
+There are skills that are mandatory for an ML role. There are other skill which could increase a lot the salary of an ML Engineer. The next two graphs shows this relation:
+
+![Average Salary by Skills](img\2_avg_salary_per_skill.png)     
+*comment about the graph*
+
+![Top 15 Skills Required For High Salary](img\2_avg_salary_per_skill.png)     
+*comment about the graph*
+
+Three key insights from the figures are:
+
+1. Python is the undisputed chapmpion of top-paying ML roles. It is a must to craft the Python skills, to be successful for ML positions. The language appears in 13 out of the top job postings. Python is the single highest-frequency requirement across the entire database.
+
+2. The two dominant ML frameworks are PyTorch and TensorFlow are the but PyTorch. They appear almost equally in the job postings. Both of them are essential for pursuating a ML career.
+
+3. Cloud skills (AWS, GCP, Azure) and Infrastructure/DevOps tools are features that every ML engineer should have in his bag. They could increase the salary of an engineer significantly.
+
+The query which was implemented to generate the results is:
+```sql
+WITH top_paying_jobs AS (
+    SELECT 
+        job_id,
+        job_title,
+        salary_year_avg,
+        name AS company_name
+    FROM
+        job_postings_fact
+    LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
+    WHERE
+        job_title_short = 'Machine Learning Engineer' AND
+        job_location = 'Anywhere' AND
+        salary_year_avg IS NOT NULL
+    ORDER BY 
+        salary_year_avg DESC
+    LIMIT 10
+)
+
+SELECT 
+    top_paying_jobs.*,
+    skills
+FROM top_paying_jobs
+INNER JOIN skills_job_dim ON top_paying_jobs.job_id = skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+ORDER BY
+    salary_year_avg DESC;
+```
+
+### 3. Top Demanded Skills
+
+The most demanded skills in 2023 are given in the figure bellow. The top language for a ML position is Python. The ML Engineer should also be good in specific libraries (PyTorch and TensorFlow), in at least one cloud technology (AWS/Azure) and have SQL skills. 
+
+![Most Demanding Skills for ML Engineer](img\3_top_demanded_skills.png)     
+*comment about the graph*
+
+A few key findings are:
+
+1. Python is the dominant programing language for ML. It appears in 9685 postings, two times more than the next skill. PyTorch comes in second place in 4389 postings. TensorFlow is very close - it appears in 4307 postings.
+
+2. Two out of ten spots - the cloud skills in the analysis. AWS is the leader - 3780 postings. Azure is on second place - appears in 2732 posting. 
+
+3. SQL is demanded in many job postings. It is rank at 5 place 3497 postings ahead of Azure, Spark and Docker. Mastering SQL could make the job candidate to stand out in the interview. Hence, doing an SQL project wasn't a waste of time, was it?
+
+This is the query that generates these results:
+
+```sql
+SELECT 
+    skills,
+    COUNT(skills_job_dim.job_id) AS demand_count
+FROM job_postings_fact
+INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+WHERE 
+    job_title_short = 'Machine Learning Engineer'
+GROUP BY 
+    skills
+ORDER BY
+    demand_count DESC
+LIMIT 10
+```
+
+### 4. Top Paying Niche Skills
+Companies are paying dozens of bills for a niche skills. The 2023 research shows that skills like haskel, chef, kotlin are the top candidates for high salary. However, for ML Engineer is better to focus on the basics in the beginning of the career, rather than in such niche skills. First, learn the fundamentials, then tackle more "exquisite" tools.
+
+One last note... For the last year, such niche high payed skills are Hugging Face, LangChain and the LLM top models APIs (OpenAI, Claude, Gemini, etc).
+
+### 5. Optimal Skills - Demand vs Salary
+
+![Optimal Skills for ML Engineer - Demand vs Salary](img\5_optimal_skills.png)     
+*comment about the graph*
+
+slkalkjdjsadjsl
 
 # What I Learned 
 - **Advanced SQL Query Crafting** - 
@@ -57,8 +161,6 @@ Here is the analysis of the market:
 - **Sub-Queries and CTE**
 
 - **Insights of the Machine Learning Job Market** - 
-
-# Conclusions
 
 ### Insights
 
