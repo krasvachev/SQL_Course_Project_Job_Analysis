@@ -146,7 +146,7 @@ LIMIT 10
 ### 4. Top Paying Niche Skills
 Companies are paying dozens of bills for niche skills. The 2023 research shows that skills like haskel, chef, kotlin are the top candidates for high salary. However, for an ML Engineer, it is better to focus on the basics in the beginning of the career, rather than in such niche technologies. First, learn the fundamentals, then tackle more "exquisite" tools.
 
-One last note ... For the last year[^1], such niche high-paid skills are Hugging Face, LangChain and the LLM top models APIs (OpenAI, Claude, Gemini, etc).
+One last note ... For the last year ^1, such niche high-paid skills are Hugging Face, LangChain and the LLM top models APIs (OpenAI, Claude, Gemini, etc).
 
 [^1]: April 2026.
 ### 5. Optimal Skills - Demand vs Salary
@@ -163,11 +163,11 @@ The last task is to compare the skills based ot demand versus salary. The figure
 - **Insights of the Machine Learning Job Market** - Find the top demand and high-paying skills, as well as optimal pathways to accelerate a career as a Machine Learning Engineer.
 
 # Insights
-As a Conclusion, the most intriguing findings are overviewed:
+💡 As a Conclusion, the most intriguing findings are overviewed:
 
-* 🐍 Python is the top language for ML positions. There is no other way around. Python should be the foundation of every ML Engineer. On the basis of Python, the other ML libraries and technologies should be built. This is also true for April 2026, where "everyone is vibe coding". Building the basics could lead to great achievements in the long run.
+*** 🐍 Python is the top language for ML positions. There is no other way around. Python should be the foundation of every ML Engineer. On the basis of Python, the other ML libraries and technologies should be built. This is also true for April 2026, where "everyone is vibe coding". Building the basics could lead to great achievements in the long run.**
 
-* 💰 The high-paid ML Engineer has the foundations in place and is multi-skilled in other technologies. PyTorch and TensorFlow are the most common libraries to build ML models. SQL is becoming a desired skill for each ML developer. Cloud technologies should also become a part of the technical stack of an ML Engineer. AWS and Azure are the optimal and highly paid skills. GCP could also be added to that list[^2].
+* 💰 The high-paid ML Engineer has the foundations in place and is multi-skilled in other technologies. PyTorch and TensorFlow are the most common libraries to build ML models. SQL is becoming a desired skill for each ML developer. Cloud technologies should also become a part of the technical stack of an ML Engineer. AWS and Azure are the optimal and highly paid skills. GCP could also be added to that list [^2].
 
 * 💪🏽 In the beginning of the career, it is better to learn the fundamentals and the optimal skills. More skills and more experience lead to a higher salary. There are also niche skills, which could extremely increase the salary. However, it is wiser to learn them after mastering the basics.
 
