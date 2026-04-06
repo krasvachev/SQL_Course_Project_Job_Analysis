@@ -148,7 +148,7 @@ Companies are paying dozens of bills for niche skills. The 2023 research shows t
 
 One last note ... For the last year[^1], such niche high-paid skills are Hugging Face, LangChain and the LLM top models APIs (OpenAI, Claude, Gemini, etc).
 
-[^1] April 2026.
+[^1]: April 2026.
 ### 5. Optimal Skills - Demand vs Salary
 
 ![Optimal Skills for ML Engineer - Demand vs Salary](img/5_optimal_skills.png)     
